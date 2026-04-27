@@ -252,11 +252,11 @@ display:
     new_items: true # 新增热点区域（含热榜新增 + RSS 新增）
     hotlist: true # 热榜区域（关键词匹配 / AI 智能筛选）
     rss: true # RSS 订阅区域
-    standalone: false # 独立展示区（完整热榜/RSS，不受关键词过滤）
+    standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: false # AI 分析区域
   standalone:
-    platforms: [] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: [] # RSS 源 ID 列表（如 ["hacker-news"]）
+    platforms: ["bilibili-hot-search","weibo","douyin","tieba","ifeng","cls-hot","thepaper","baidu","toutiao","wallstreetcn-hot","zhihu"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    rss_feeds: ["hacker-news"] # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
